@@ -1,0 +1,42 @@
+/* WORK */
+
+.work {
+  display: flex;
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.work-thumb {
+  position: relative;
+
+  &::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+}
+
+.work-overlay {
+  display: flex;
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-text {
+  color: var(--white-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

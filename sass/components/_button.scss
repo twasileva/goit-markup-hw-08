@@ -1,0 +1,40 @@
+/* Оформление кнопки */
+.button {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border: 0;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+
+  background-color: var(--logo-text-color);
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+
+  transition: color var(--transition-duration) var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--white-text-color-op);
+  }
+}
+
+.button--hero {
+  // display: block;
+  padding: 10px 32px;
+}
+
+.button--subscribe {
+  padding: 10px 8px 10px 29px;
+}
+
+.button--modal {
+  padding: 10px 55px;
+
+  letter-spacing: 0.06em;
+}

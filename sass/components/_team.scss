@@ -1,0 +1,32 @@
+/* TEAM */
+
+.team {
+  display: flex;
+}
+
+.team__item {
+  width: 270px;
+  text-align: center;
+  background-color: var(--white-text-color);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__container {
+  padding: 30px 30px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team__heading {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.team__text {
+  color: var(--paragraph-text-color);
+  margin-bottom: 16px;
+}

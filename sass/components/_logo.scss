@@ -1,0 +1,19 @@
+/* LOGO */
+
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
+  color: var(--primary-text-color);
+  font-family: var(--logo-font-family), sans-serif;
+
+  font-size: 26px;
+  line-height: 1.19;
+
+  outline: none;
+}
+
+.logo__part {
+  color: var(--logo-text-color);
+}
