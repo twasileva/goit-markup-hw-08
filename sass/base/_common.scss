@@ -23,6 +23,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -34,9 +35,14 @@ ul {
 /* CONTAINER */
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+    }
+  }
 }
 
 .section {
