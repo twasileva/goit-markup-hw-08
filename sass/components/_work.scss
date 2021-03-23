@@ -1,5 +1,11 @@
 /* WORK */
 
+@media screen and (max-width: 767px) {
+  .work-section {
+    display: none;
+  }
+}
+
 .work {
   display: flex;
 }
@@ -20,7 +26,6 @@
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
   }
-
 }
 
 .work-overlay {
