@@ -16,5 +16,11 @@
 <symbol id="icon-send" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M32 0l-32 18 10.227 3.788 15.773-14.788-11.998 16.186 0.010 0.004-0.012-0.004v8.814l5.735-6.691 7.265 2.691 5-28z"></path>
 </symbol>
+<symbol id="cross" viewBox="0 0 32 32">
+<path d="M18.667 1.88L16.787 0 9.333 7.453 1.88 0 0 1.88l7.453 7.453L0 16.787l1.88 1.88 7.453-7.454 7.454 7.454 1.88-1.88-7.454-7.454 7.454-7.453z"/></path>
+</symbol>
+<symbol id="menu" viewBox="0 0 32 32">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.667V0h24v2.667H0zm0 6.666h24V6.667H0v2.666zM0 16h24v-2.667H0V16z" fill="#000"/></path>
+</symbol>
 </defs>
 </svg>

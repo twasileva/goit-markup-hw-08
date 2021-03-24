@@ -1,11 +1,121 @@
-.menu-container {
-  display: none;
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
 }
 
-.menu-toggle {
-  display: block;
-
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: var(--white-text-color);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  fill: currentColor;
+}
+
+.menu-container:hover .menu-toggle,
+.menu-container:focus .menu-toggle {
+  fill: var(--logo-text-color);
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__list {
+  // font-family: var(--primary-font-family);
+  // color: var(--primary-text-color);
+  // font-size: 40px;
+  // line-height: 1.175;
+
+  // letter-spacing: 0.02em;
+}
+
+.mobile-menu__link {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.175;
+
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    color: var(--logo-text-color);
+  }
+}
+
+.mobile-menu__link--current {
+  color: var(--logo-text-color);
+}
+
+.mobile-menu__link--color {
+  color: var(--paragraph-text-color);
+
+  font-size: 24px;
+  line-height: 1.166;
+}
+
+.mobile-menu__link--socials {
+  color: var(--logo-text-color);
+
+  font-size: 18px;
+  line-height: 1.22;
+  margin-right: 10px;
+}
+
+.mobile-menu__group {
+  align-items: flex-end;
+}
+
+.mobile-menu__item {
+  margin-bottom: 32px;
+}
+
+.mobile-socials {
+  display: flex;
+}
+
+.mobile-socials__item {
+  margin-right: 10px;
 }
