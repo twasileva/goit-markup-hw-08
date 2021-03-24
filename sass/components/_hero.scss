@@ -18,7 +18,7 @@
 
   background-color: var(--hero-footer-main-page);
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     max-width: 480px;
     height: 400px;
     padding: 118px 60px;
@@ -47,8 +47,8 @@
   max-width: 700px;
   margin: 0 auto;
 
-  @media (min-width: 480px) {
-    max-width: 360px;
+  @media (max-width: 767px) {
+    max-width: 480px;
   }
 }
 
@@ -63,8 +63,8 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media (min-width: 480px) {
-    font-size: 26px;
+  @media (max-width: 767px) {
+    font-size: 24px;
     line-height: 1.615;
     margin-bottom: 30px;
   }
