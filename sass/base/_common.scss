@@ -35,14 +35,10 @@ ul {
 /* CONTAINER */
 
 .container {
+  max-width: 480px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
-}
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-    min-width: 320px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -61,7 +57,7 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  @media (min-width: 480px) {
+  @media (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -79,7 +75,7 @@ ul {
   line-height: 1.17;
   text-align: center;
 
-  @media (min-width: 480px) {
+  @media (max-width: 767px) {
     margin-bottom: 30px;
 
     font-size: 28px;

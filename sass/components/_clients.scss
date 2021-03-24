@@ -3,7 +3,7 @@
   display: flex;
   margin-right: calc(-1 * var(--examples-gap));
 
-  @media (min-width: 480px) {
+  @media (max-width: 767px) {
     flex-wrap: wrap;
     margin-bottom: calc(-1 * var(--examples-gap));
   }
@@ -12,7 +12,7 @@
 .clients__item {
   // flex-basis: calc(100% / 6 - var(--examples-gap));
 
-  @media (min-width: 480px) {
+  @media (max-width: 767px) {
     flex-basis: calc(100% / 2 - var(--examples-gap));
     margin-right: var(--examples-gap);
     margin-bottom: 30px;

@@ -51,15 +51,10 @@ ul {
 
 /* CONTAINER */
 .container {
+  max-width: 480px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
-}
-
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 480px;
-    min-width: 320px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -79,7 +74,7 @@ ul {
   padding-bottom: 94px;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -98,7 +93,7 @@ ul {
   text-align: center;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .section__heading {
     margin-bottom: 30px;
     font-size: 28px;
@@ -870,6 +865,12 @@ summary {
   display: none;
 }
 
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: block;
+  }
+}
+
 /* HERO */
 .hero {
   max-width: 1600px;
@@ -1203,21 +1204,21 @@ summary {
   padding-top: 94px;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .features {
     padding-top: 60px;
   }
 }
 
 .features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .features__list {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1235,7 +1236,7 @@ summary {
   text-transform: uppercase;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .features__heading {
     text-align: center;
   }
@@ -1250,7 +1251,7 @@ summary {
   line-height: 1.71;
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .features__text {
     margin-bottom: 30px;
   }
@@ -1485,7 +1486,7 @@ summary {
   margin-right: calc(-1 * var(--examples-gap));
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .clients {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1493,7 +1494,7 @@ summary {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 767px) {
   .clients__item {
     -ms-flex-preferred-size: calc(100% / 2 - var(--examples-gap));
         flex-basis: calc(100% / 2 - var(--examples-gap));
