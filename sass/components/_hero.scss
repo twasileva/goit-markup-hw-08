@@ -18,7 +18,7 @@
 
   background-color: var(--hero-footer-main-page);
 
-  @media screen and (max-width: 767px) {
+  @media (max-width: 767px) {
     max-width: 480px;
     height: 400px;
     padding: 118px 60px;

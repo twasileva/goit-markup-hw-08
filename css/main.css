@@ -865,9 +865,13 @@ summary {
   display: none;
 }
 
-@media (max-width: 767px) {
+.menu-toggle {
+  display: block;
+}
+
+@media (min-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: none;
   }
 }
 
@@ -887,7 +891,7 @@ summary {
   background-color: var(--hero-footer-main-page);
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .hero {
     max-width: 480px;
     height: 400px;
@@ -897,7 +901,7 @@ summary {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media (max-width: 767px) and (min-device-pixel-ratio: 2), (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/mobile/mobile-hero@2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/mobile/mobile-hero@2x.jpg);
