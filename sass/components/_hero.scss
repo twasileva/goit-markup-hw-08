@@ -17,12 +17,39 @@
   text-align: center;
 
   background-color: var(--hero-footer-main-page);
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    height: 400px;
+    padding: 118px 60px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/main/mobile/mobile-hero.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/main/mobile/mobile-hero@2x.jpg);
+    }
+  }
 }
 
 .hero__container {
   display: block;
   max-width: 700px;
   margin: 0 auto;
+
+  @media (min-width: 480px) {
+    max-width: 360px;
+  }
 }
 
 .hero__heading {
@@ -35,4 +62,10 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media (min-width: 480px) {
+    font-size: 26px;
+    line-height: 1.615;
+    margin-bottom: 30px;
+  }
 }

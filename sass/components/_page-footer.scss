@@ -8,8 +8,14 @@
 }
 
 .page-footer__container {
-  display: flex;
-  align-items: baseline;
+  @media (min-width: 480px) {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .page-footer__address {
@@ -32,6 +38,10 @@
 
   font-size: 14px;
   line-height: 1.71;
+
+  @media (min-width: 480px) {
+    margin-bottom: 60px;
+  }
 }
 
 .address__item:first-child {
@@ -46,7 +56,13 @@
 }
 
 .page-footer__socials {
-  margin-right: 93px;
+  @media (min-width: 480px) {
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 93px;
+  }
 }
 
 .page-footer__heading {
