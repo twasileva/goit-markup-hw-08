@@ -53,19 +53,19 @@ ul {
 .container {
   max-width: 480px;
   min-width: 320px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -721,6 +721,12 @@ summary {
 
 /* HEADER */
 .page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #ececec;
 }
 
@@ -748,17 +754,17 @@ summary {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 767px) {
+  .page-header__nav {
+    display: none;
+  }
+}
+
 /* NAV */
 .nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (max-width: 767px) {
-  .nav-list {
-    display: none;
-  }
 }
 
 .nav-list__item:not(:last-child) {
@@ -1007,7 +1013,8 @@ summary {
   .hero {
     max-width: 480px;
     height: 400px;
-    padding: 118px 60px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/mobile/mobile-hero.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/mobile/mobile-hero.jpg);
   }
@@ -1044,7 +1051,7 @@ summary {
 
 @media (max-width: 767px) {
   .hero__heading {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.615;
     margin-bottom: 30px;
   }
@@ -1599,23 +1606,24 @@ summary {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: calc(-1 * var(--examples-gap));
 }
 
 @media (max-width: 767px) {
   .clients {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: calc(-1 * var(--examples-gap));
+    margin-bottom: -30px;
   }
 }
 
 @media (max-width: 767px) {
   .clients__item {
-    -ms-flex-preferred-size: calc(100% / 2 - var(--examples-gap));
-        flex-basis: calc(100% / 2 - var(--examples-gap));
-    margin-right: var(--examples-gap);
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
     margin-bottom: 30px;
+  }
+  .clients__item:nth-child(odd) {
+    margin-right: 30px;
   }
 }
 
