@@ -15,9 +15,9 @@
                         <li class="nav-list__item"><a href="./index.html" class="nav-list__link nav-list__link--current">Студия</a></li>
                         <li class="nav-list__item"><a href="./portfolio.html" class="nav-list__link">Портфолио</a></li>
                         <li class="nav-list__item"><a href="" class="nav-list__link">Контакты</a></li>
-                    </ul>
+                </ul>
             
-                    <ul class="nav-list nav-list__contacts">
+                <ul class="nav-list nav-list__contacts">
                         <li class="nav-list__item nav-list__item--end">
                             <a href="mailto:info@devstudio.com" class="nav-list__link nav-list__link--color">
                                 <svg class="nav-list__icon" width="16" height="12">
@@ -34,15 +34,15 @@
                                 +38 096 111 11 11
                             </a>
                         </li>
-                    </ul>
+                </ul>
             </nav>
         
         <!-- Button mobile -->
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="24" height="24">
-                <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-        </button>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -136,8 +136,13 @@
                 <h2 class="section__heading">Наша команда</h2>
                 <ul class="team">
                     <li class="team__item">
-                        <img src="./images/main/mobile/img1.jpg" alt="Игорь Демьяненко" width="450" height="460"
-                        srcset="./images/main/mobile/img1.jpg 1x,  ./images/main/mobile/img1@2x.jpg 2x">
+                        <div class="team__thumb">
+                            <img src="./images/main/mobile/img1.jpg" alt="Игорь Демьяненко"
+                                srcset="./images/main/mobile/img1.jpg 1x,  ./images/main/mobile/img1@2x.jpg 2x, 
+                                ./images/main/tablet/img1.jpg 1x, ./images/main/tablet/img1@2x.jpg 2x, 
+                                ./images/main/img1.jpg 1x, ./images/main/img1@2x.jpg 2x"
+                                >
+                        </div>
                         <div class="team__container">
                             <h3 class="team__heading">Игорь Демьяненко</h3>
                             <p class="team__text">Product Designer</p>
@@ -174,8 +179,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/main/mobile/img2.jpg" alt="Ольга Репина" width="450" height="460"
-                            srcset="./images/main/mobile/img2.jpg 1x,  ./images/main/mobile/img2@2x.jpg 2x">
+                        <div class="team__thumb">
+                        <img src="./images/main/mobile/img2.jpg" alt="Ольга Репина"
+                            srcset="./images/main/mobile/img2.jpg 1x,  ./images/main/mobile/img2@2x.jpg 2x,
+                            ./images/main/tablet/img2.jpg 1x,  ./images/main/tablet/img2@2x.jpg 2x,
+                            ./images/main/img2.jpg 1x,  ./images/main/img2@2x.jpg 2x">
+                        </div>
                         <div class="team__container">
                             <h3 class="team__heading">Ольга Репина</h3>
                             <p class="team__text">Frontend Developer</p>
@@ -212,8 +221,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/main/mobile/img3.jpg" alt="Николай Тарасов" width="450" height="460"
-                            srcset="./images/main/mobile/img3.jpg 1x,  ./images/main/mobile/img3@2x.jpg 2x">
+                        <div class="team__thumb">
+                        <img src="./images/main/mobile/img3.jpg" alt="Николай Тарасов"
+                            srcset="./images/main/mobile/img3.jpg 1x,  ./images/main/mobile/img3@2x.jpg 2x,
+                            ./images/main/tablet/img3.jpg 1x,  ./images/main/tablet/img3@2x.jpg 2x,
+                            ./images/main/img3.jpg 1x,  ./images/main/img3@2x.jpg 2x">
+                        </div>
                         <div class="team__container">
                             <h3 class="team__heading">Николай Тарасов</h3>
                             <p class="team__text">Marketing</p>
@@ -250,8 +263,12 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="./images/main/mobile/img4.jpg" alt="Михаил Ермаков" width="450" height="460"
-                            srcset="./images/main/mobile/img4.jpg 1x,  ./images/main/mobile/img4@2x.jpg 2x">
+                        <div class="team__thumb">
+                        <img src="./images/main/mobile/img4.jpg" alt="Михаил Ермаков"
+                            srcset="./images/main/mobile/img4.jpg 1x,  ./images/main/mobile/img4@2x.jpg 2x,
+                            ./images/main/tablet/img4.jpg 1x,  ./images/main/tablet/img4@2x.jpg 2x,
+                            ./images/main/img4.jpg 1x,  ./images/main/img4@2x.jpg 2x">
+                        </div>
                         <div class="team__container">
                             <h3 class="team__heading">Михаил Ермаков</h3>
                             <p class="team__text">UI Designer</p>
@@ -509,9 +526,6 @@
                 <ul class="mobile-socials">
                     <li class="mobile-socials__item">
                         <a href="#" class="mobile-menu__link mobile-menu__link--socials">Instagram</a>
-                        <svg width="1" height="22">
-                            <use href="./images/line.svg"></use>
-                        </svg>
                     </li>
                     <li class="mobile-socials__item">
                         <a href="#" class="mobile-menu__link mobile-menu__link--socials">Twitter</a>

@@ -3,7 +3,7 @@
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
-  margin-right: 93px;
+  // margin-right: 93px;
 
   color: var(--primary-text-color);
   font-family: var(--logo-font-family), sans-serif;
@@ -15,7 +15,9 @@
 
   @media screen and (max-width: 767px) {
     font-size: 24px;
-    line-height: 1.166;
+    line-height: 1.174;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
