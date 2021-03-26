@@ -24,6 +24,9 @@
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -53,12 +56,6 @@
   fill: currentColor;
 }
 
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .mobile-menu__group {
   align-items: flex-end;
 }
@@ -83,6 +80,8 @@
 }
 
 .mobile-menu__link--current {
+  font-size: 34px;
+  line-height: 1.176;
   color: var(--logo-text-color);
 }
 
