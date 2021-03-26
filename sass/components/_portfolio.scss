@@ -72,10 +72,6 @@
 .examples__thumb {
   position: relative;
   overflow: hidden;
-
-  @media (max-width: 767px) {
-    // height: 404px;
-  }
 }
 
 .examples__overlay {
