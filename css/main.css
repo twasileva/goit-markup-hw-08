@@ -53,7 +53,6 @@ ul {
 .container {
   max-width: 480px;
   min-width: 320px;
-  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -66,6 +65,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -768,21 +768,6 @@ summary {
   margin-right: 50px;
 }
 
-.nav-list__item--end {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .nav-list__contacts {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .nav-list__link {
   position: relative;
   display: -webkit-box;
@@ -824,20 +809,59 @@ summary {
 }
 
 /* CONTACTS */
-.nav-list__link--color {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.nav-contacts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-contacts__link {
+  display: block;
+  font-family: var(--primary-font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
   color: var(--paragraph-text-color);
   -webkit-transition: color var(--transition-duration) var(--transition-timing-function);
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 
-.nav-list__icon {
+.nav-contacts__link:hover, .nav-contacts__link:focus {
+  color: var(--logo-text-color);
+  outline: var(--logo-text-color);
+}
+
+.nav-contacts__link--pos {
+  margin-bottom: 10px;
+}
+
+.nav-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
   -webkit-transition: fill var(--transition-duration) var(--transition-timing-function);
   transition: fill var(--transition-duration) var(--transition-timing-function);
 }
 
-.nav-list__icon:hover, .nav-list__icon:focus {
+.nav-contacts__icon:hover, .nav-contacts__icon:focus {
   fill: currentColor;
 }
 
@@ -858,6 +882,16 @@ summary {
     line-height: 1.174;
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.174;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
   }
 }
 
@@ -1034,6 +1068,24 @@ summary {
   }
 }
 
+@media (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/tablet/tablet-hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/tablet/tablet-hero.jpg);
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/main/tablet/tablet-hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/main/tablet/tablet-hero@2x.jpg);
+  }
+}
+
 .hero__container {
   display: block;
   max-width: 700px;
@@ -1041,6 +1093,12 @@ summary {
 }
 
 @media (max-width: 767px) {
+  .hero__container {
+    max-width: 450px;
+  }
+}
+
+@media (min-width: 768px) {
   .hero__container {
     max-width: 450px;
   }
@@ -1056,7 +1114,7 @@ summary {
   text-transform: uppercase;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero__heading {
     font-size: 26px;
     line-height: 1.615;
