@@ -8,6 +8,7 @@ body {
 
 a {
   text-decoration: none;
+  font-family: inherit;
 }
 
 h1,
@@ -36,7 +37,7 @@ ul {
 
 .container {
   max-width: 480px;
-  // min-width: 320px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -50,7 +51,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin: 0 auto;
   }
 }
 
@@ -58,7 +58,7 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -76,7 +76,7 @@ ul {
   line-height: 1.17;
   text-align: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     margin-bottom: 30px;
 
     font-size: 28px;

@@ -9,11 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media (min-width: 768px) and (max-width: 1199px) {
-    margin: 0 auto;
-    width: 100%;
-  }
 }
 
 .page-header__nav {
@@ -113,7 +108,12 @@
 }
 
 .nav-contacts__link--pos {
+  padding-top: 20px;
   margin-bottom: 10px;
+}
+
+.nav-contacts__link--pad {
+  padding-bottom: 20px;
 }
 
 .nav-contacts__icon {
@@ -125,5 +125,8 @@
   &:hover,
   &:focus {
     fill: currentColor;
+  }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
   }
 }

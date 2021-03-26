@@ -30,8 +30,8 @@
   max-height: 581px;
 
   @media (max-width: 767px) {
-    width: 450px;
-    height: auto;
+    width: calc(100% - 15px);
+    height: 100%;
   }
 }
 
