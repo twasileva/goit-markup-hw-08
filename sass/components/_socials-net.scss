@@ -2,7 +2,6 @@
 
 .socials {
   display: flex;
-  // margin-right: -10px;
 
   @media (max-width: 1199px) {
     justify-content: center;
@@ -11,10 +10,6 @@
 
 .socials__item {
   margin-right: 10px;
-
-  // @media (min-width: 768px) {
-  //   flex-basis: calc(100% / 4 - 10px);
-  // }
 }
 
 .socials__link {

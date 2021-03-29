@@ -3,19 +3,25 @@
 .examples-field {
   display: flex;
 
-  // margin-bottom: 50px;
   @media (max-width: 767px) {
     flex-wrap: wrap;
     margin-bottom: 40px;
   }
+
   @media (min-width: 768px) {
     justify-content: center;
     margin-bottom: 30px;
   }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .examples-field__item:nth-child(-n + 3) {
-  margin-bottom: 15px;
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 
 .examples-field__item:not(:last-child) {
@@ -56,8 +62,6 @@
 }
 
 .examples__item {
-  // flex-basis: calc(100% / 3 - var(--examples-gap));
-  // margin-right: var(--examples-gap);
   margin-bottom: var(--examples-gap);
   box-shadow: none;
 
@@ -78,6 +82,17 @@
     flex-basis: calc(100% / 2 - var(--examples-gap));
     margin-right: var(--examples-gap);
   }
+
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - var(--examples-gap));
+    margin-right: var(--examples-gap);
+  }
+}
+
+.examples__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .examples__thumb {

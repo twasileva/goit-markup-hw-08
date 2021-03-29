@@ -29,8 +29,8 @@
   max-width: 528px;
   max-height: 581px;
 
-  @media (max-width: 767px) {
-    width: calc(100% - 15px);
+  @media (max-width: 1199px) {
+    width: 450px;
     height: 100%;
   }
 }
@@ -175,7 +175,7 @@
   line-height: 1.714;
   letter-spacing: 0.03em;
 
-  @media (max-width: 767px) {
+  @media (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.166;
   }
