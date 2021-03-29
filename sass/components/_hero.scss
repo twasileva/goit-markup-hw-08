@@ -9,7 +9,7 @@
   background-color: var(--hero-footer-main-page);
 
   @media (max-width: 767px) {
-    max-width: 480px;
+    max-width: 767px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -32,8 +32,8 @@
     }
   }
 
-  @media (min-width: 768px) {
-    max-width: 768px;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    max-width: 1199px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
