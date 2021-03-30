@@ -16,10 +16,15 @@
   @media (min-width: 768px) {
     display: none;
   }
+
+  &:hover,
+  &:focus {
+    fill: var(--logo-text-color);
+  }
 }
 
-.menu-toggle:hover,
-.menu-toggle:focus {
+.menu-container > .menu-toggle:hover,
+.menu-container > .menu-toggle:focus {
   fill: var(--logo-text-color);
 }
 
@@ -106,9 +111,19 @@
 
 .mobile-socials {
   display: flex;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    flex-wrap: wrap;
+  }
 }
 
 .mobile-socials__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   margin-right: 10px;
+}
+
+.mobile-socials__item:nth-child(-n + 2) {
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-bottom: 10px;
+  }
 }
