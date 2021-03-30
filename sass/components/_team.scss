@@ -39,8 +39,6 @@
 }
 
 .team__thumb {
-  object-fit: cover;
-
   @media (max-width: 767px) {
     height: 460px;
   }
