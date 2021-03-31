@@ -1095,7 +1095,7 @@ summary {
   display: flex;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 479px) {
   .mobile-socials {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1107,7 +1107,7 @@ summary {
   margin-right: 10px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 479px) {
   .mobile-socials__item:nth-child(-n + 2) {
     margin-bottom: 10px;
   }
@@ -1891,7 +1891,7 @@ summary {
   background-color: var(--hero-footer-main-page);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   .page-footer__container {
     text-align: center;
   }

@@ -112,7 +112,7 @@
 .mobile-socials {
   display: flex;
 
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (max-width: 479px) {
     flex-wrap: wrap;
   }
 }
@@ -123,7 +123,7 @@
 }
 
 .mobile-socials__item:nth-child(-n + 2) {
-  @media (min-width: 320px) and (max-width: 480px) {
+  @media (max-width: 479px) {
     margin-bottom: 10px;
   }
 }
